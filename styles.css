@@ -66,7 +66,7 @@ nav a .nav-number{margin:0 6px 0 0;color:var(--garnet);font-size:12px;font-varia
 nav .nav-cv{display:inline-block;align-self:center;font:400 14px/1.65 var(--sans);color:var(--ink);padding:10px 0;white-space:nowrap}
 nav .nav-cv>span{font-size:12px;margin-left:4px}
 
-.research-page .research-video{margin-top:10px;font:400 15px/1.7 var(--sans)}
+.research-page .research-video{margin-top:6px;font:400 15px/1.7 var(--sans)}
 .research-page .presentation-link{display:inline-flex;align-items:center;gap:7px;color:var(--garnet)}
 .research-page .video-play{display:inline-flex;align-items:center;justify-content:center;flex:none;box-sizing:border-box;width:14px;height:14px;border:1px solid currentColor;border-radius:50%;font:400 7px/1 var(--sans);padding-left:1px}
 
