@@ -11,11 +11,11 @@ const profile = {
     {
       "heading": "Research:",
       "paragraphs": [
-        "I'm an undergraduate student in Computer Science at Shanghai University of Finance and Economics (SUFE). I'm currently working on topics in theoretical computer science, particularly information design and Bayesian persuasion.",
-        "I'm also exploring economics and other areas of computer science, guided by curiosity.",
+        "I'm an undergraduate student in Computer Science at Shanghai University of Finance and Economics (SUFE). My current research focuses on theoretical computer science, particularly information design and Bayesian persuasion.",
+        "I'm also exploring economics and other areas of computer science, guided by curiosity. After all, research is formalized curiosity.",
         {
           "parts": [
-            "I'm fortunate to work with ",
+            "I've been fortunate to work with ",
             {
               "link": {
                 "text": "Renzhe Xu",
@@ -37,10 +37,10 @@ const profile = {
     {
       "heading": "In life:",
       "paragraphs": [
-        "I enjoy musicals, opera and archery.",
+        "I enjoy musicals, opera and archery :)",
         {
           "label": "Musicals, Opera & Concerts:",
-          "text": "I'm the founder of the SUFE Musical Theatre Club. We are always open to opportunities to collaborate on events and performances, and we're also seeking vocal coaches. Please contact me if you are interested!"
+          "text": "I'm the founder of the SUFE Musical Theatre Club. We are always open to collaborating on events and performances, and we're also seeking vocal coaches. Please contact me if you are interested!"
         },
         "I'll occasionally update my blog with posts about musicals/opera/concerts, or other things.",
         {
@@ -58,11 +58,11 @@ const profile = {
             {
               "em": "Les Misérables"
             },
-            ". I'm also particularly fond of the musical ",
+            ". The musical ",
             {
               "em": "Hamilton"
             },
-            ". My favorite figure of the French Revolution is the Marquis de Lafayette, for his passion and tragic naivety."
+            " is another work I particularly enjoy. My favorite figure of the French Revolution is the Marquis de Lafayette, for his passion and tragic naivety."
           ]
         }
       ]
