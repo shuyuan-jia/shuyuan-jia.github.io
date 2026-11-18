@@ -1,3 +1,8 @@
+// Keep explicitly opened index.html addresses clean without reloading the page.
+if (window.location.pathname && window.location.pathname.endsWith('/index.html')) {
+  window.history.replaceState(null, '', window.location.pathname.slice(0, -'index.html'.length) + window.location.search + window.location.hash);
+}
+
 /* Edit this object to replace the prototype content. Use real URLs only. */
 const profile = {
   // Edit homepage section headings and paragraphs here. Labels are optional.
@@ -64,10 +69,10 @@ const profile = {
     }
   ],
   beyond: 'Outside research, I enjoy musical theatre, opera, and the performing arts.',
-  portrait: 'assets/portrait.jpg',
+  portrait: '/assets/portrait.jpg',
   portraitAlt: 'Shuyuan Jia',
   email: 'shuyuan.j@outlook.com',
-  cv: null, // e.g. 'assets/shuyuan-jia-cv.pdf'
+  cv: null, // e.g. '/assets/shuyuan-jia-cv.pdf'
   // Research works, in display order.
   works: [
     {
