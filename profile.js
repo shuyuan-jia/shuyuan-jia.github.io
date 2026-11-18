@@ -183,10 +183,12 @@ function driveVideoPreviewUrl(value) {
 }
 const works = document.getElementById('works');
 if (works && profile.works.length) {
-  const articles = profile.works.map(work => {
+  const articles = profile.works.map((work, index) => {
     const article = document.createElement('article');
     article.className = 'research-work';
     const heading = document.createElement('h2');
+    heading.id = 'paper-title-' + (index + 1);
+    article.setAttribute('aria-labelledby', heading.id);
     if (work.url && safeUrl(work.url)) {
       const link = document.createElement('a');
       link.href = safeUrl(work.url); link.textContent = work.title;
@@ -213,7 +215,8 @@ if (works && profile.works.length) {
       link.textContent = 'arXiv:' + work.arxiv;
       venue.append(document.createTextNode(' · '), link);
     }
-    article.append(heading, authors, venue);
+    const details = document.createElement('div'); details.className = 'paper-details';
+    details.append(authors, venue);
     if (work.presentationVideo) {
       const line = document.createElement('p'); line.className = 'research-video';
       const link = document.createElement('a'); link.className = 'presentation-link';
@@ -226,8 +229,9 @@ if (works && profile.works.length) {
       const label = document.createElement('span'); label.className = 'video-label';
       label.textContent = 'Presentation Video';
       link.append(icon, label);
-      line.append(link); article.append(line);
+      line.append(link); details.append(line);
     }
+    article.append(heading, details);
     return article;
   });
   works.replaceChildren(...articles);
