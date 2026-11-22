@@ -26,7 +26,7 @@ nav a .nav-number{margin:0 6px 0 0;color:var(--garnet);font-size:12px;font-varia
 .home .biography p+p{margin-top:10px}
 .home .biography strong{font-family:inherit;font-size:inherit;font-weight:600;color:var(--ink)}
 .home .biography section+section{margin-top:24px}
-.home .portrait{position:static;width:100%;max-width:none;margin:calc(var(--name-size)*1.1 + var(--intro-gap)) 0 0;align-self:start}
+.home .portrait{position:absolute;right:0;top:calc(var(--name-size)*1.1 + var(--intro-gap));width:var(--portrait-width);max-width:none;margin:0}
 .home .portrait-mat{aspect-ratio:auto;padding:0;border:1px solid var(--line)}
 .home .portrait img{display:block;width:100%;height:auto;object-fit:contain}
 .home .portrait-initials{font-size:clamp(72px,10svh,104px);letter-spacing:-5px;margin-top:0}
@@ -45,7 +45,8 @@ nav a .nav-number{margin:0 6px 0 0;color:var(--garnet);font-size:12px;font-varia
  .home header{min-height:0;padding:16px 0;gap:4px}
  .home main{padding:24px 0}
  .home .hero{grid-template-columns:1fr}
- .home .portrait{width:190px;max-width:60%;margin:28px 0 0 auto}
+ .home .biography{display:flow-root}
+ .home .portrait{position:static;float:right;width:33%;min-width:96px;max-width:112px;margin:0 0 12px 16px}
 }
 
 /* Research keeps its heading and quiet marginal note apart from the work list. */
